@@ -17,7 +17,7 @@ function handler (servers, catchAll) {
     } else if (typeof conf === 'object') {
       // Check options
       if (typeof conf.handler !== 'function') throw new Error('[virtualhost] Invalid configuration for server "' + server + '": "handler" should be a valid callback');
-      if (!conf.pattern || (typeof conf.pattern !== 'string' && !(conf.pattern instanceof RegExp))) throw new Error('[virtualhost] Invalid configuration for server"' + server + '": "pattern" should be a string or a RegExp');
+      if (!conf.pattern || (typeof conf.pattern !== 'string' && !(conf.pattern instanceof RegExp))) throw new Error('[virtualhost] Invalid configuration for server "' + server + '": "pattern" should be a string or a RegExp');
     } else {
       // Invalid type
       throw new Error('[virtualhost] Invalid configuration for server "' + server + '": object or function expected');
@@ -52,7 +52,6 @@ function matchHost (hostInfo, conf) {
   var pattern = conf.pattern;
   var host = hostInfo.hostname + (conf.with_port ? (':' + hostInfo.port) : '');
   if (conf.pattern instanceof RegExp) {
-    console.log(host, conf.pattern, host.match(conf.pattern));
     return host.match(conf.pattern);
   } else {
     return host === conf.pattern;
