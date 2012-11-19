@@ -1,6 +1,8 @@
 virtualhost
 ===========
 
+[![Travis CI Status](https://travis-ci.org/lmtm/node-virtualhost.png "You Shall Pass!")](https://travis-ci.org/#!/lmtm/node-virtualhost)
+
 Make your HTTP server hostname-aware **very simply**.
 
 You define the handler for each server name, and that will return the final handler to be passed to your HTTP server.
