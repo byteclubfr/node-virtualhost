@@ -1,7 +1,4 @@
-virtualhost
-===========
-
-[![Travis CI Status](https://travis-ci.org/lmtm/node-virtualhost.png "You Shall Pass!")](https://travis-ci.org/#!/lmtm/node-virtualhost)
+# virtualhost [![Travis CI Status](https://travis-ci.org/lmtm/node-virtualhost.png "You Shall Pass!")](https://travis-ci.org/#!/lmtm/node-virtualhost)
 
 Make your HTTP server hostname-aware **very simply**.
 
