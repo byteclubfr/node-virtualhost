@@ -22,5 +22,6 @@
   "optionalDependencies": {},
   "engines": {
     "node": "*"
-  }
+  },
+  "keywords": ["express", "host", "hostname", "virtual", "virtualhost", "http"]
 }
