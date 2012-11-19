@@ -56,6 +56,17 @@ virtualhost({
 
 Of course you can mix both syntax.
 
+### Additional sugar
+
+As a bonus, the `Request` object will be enhanced with an additional attribute `virtualhost`. You can use it in your handlers to identify context:
+
+* `req.virtualhost.hostname` is the hostname without port
+* `req.virtualhost.port` is the port
+* `req.virtualhost.match` depends of the matching result
+  * `false` if no pattern was matched
+  * `true` if a string-pattern was matched
+  * an array if the matched pattern was a `RegExp`. `match` is then the result of `String#match()`, which means you can access capturing groups. If your pattern was `/mydomain\.(fr|com)/` then in your handler you'll be able to access `req.virtualhost.match[1]` which will contain `"fr"` or `"com"`.
+
 Sample usage
 ------------
 
