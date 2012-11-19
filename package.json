@@ -1,0 +1,18 @@
+{
+  "author": "Nicolas Chambrier <naholyr@gmail.com> (http://naholyr.fr)",
+  "name": "virtualhost",
+  "description": "Dispatch HTTP request to a handler depending on hostname",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lmtm/node-virtualhost",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lmtm/node-virtualhost.git"
+  },
+  "main": "virtualhost.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
